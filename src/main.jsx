@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Router basename="/GrammarlyBot/">
+    <Router basename="/GrammarlyBot">
       <App />
     </Router>
   </React.StrictMode>
