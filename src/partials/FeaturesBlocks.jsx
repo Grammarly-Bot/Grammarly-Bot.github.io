@@ -50,7 +50,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">2. Merge</h4>
-              <p className="text-gray-600 text-center">GrammarlyBot will send you your first pull request, improving the grammar of all the documentation files that it can find.</p>
+              <p className="text-gray-600 text-center">GrammarlyBot will send you your first pull request, improving the grammar of all the documentation it can find.</p>
             </div>
 
             {/* 3rd item */}
@@ -67,7 +67,7 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">3. Win</h4>
-              <p className="text-gray-600 text-center">GrammarlyBot watches for new images in your repository and opens more pull requests.</p>
+              <p className="text-gray-600 text-center">GrammarlyBot watches for new documentation in your repository and opens more pull requests.</p>
             </div>
 
           </div>
