@@ -1,5 +1,9 @@
 import React from 'react';
 
+
+import grayhatImg from '../images/grayhat.png';
+import googleImg from '../images/google.png';
+import codeazaImg from '../images/codeaza.png';
 import TestimonialImage from '../images/testimonial.jpg';
 
 function Testimonials() {
@@ -44,17 +48,17 @@ function Testimonials() {
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <img src={"/grayhat.png"} alt={"Grayhat"} />
+              <img src={grayhatImg} alt={"Grayhat"} />
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <img src={"/google.png"} alt={"Google"} />
+              <img src={googleImg} alt={"Google"} />
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <img src={"/codeaza.png"} alt={"Codeaza"} />
+              <img src={codeazaImg} alt={"Codeaza"} />
             </div>
 
             {/* Item */}
