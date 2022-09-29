@@ -1,6 +1,37 @@
-import React from 'react';
+import React, { useRef } from 'react';
 
 function Newsletter() {
+  const emailRef = useRef(null);
+
+  const postToGoogle = (e) => {
+    e.preventDefault();
+
+    var field1 = emailRef.current.value;
+
+    // Simple POST request with a JSON body using fetch
+    const requestOptions = {
+        method: 'POST',
+        headers: { 
+          'Content-Type': 'application/xml',
+          'Access-Control-Allow-Origin': '*',
+          'mode': 'no-cors',
+          'Access-Control-Allow-Credentials': 'true',
+        },
+        body: JSON.stringify({
+          "entry.1748406858": field1,
+        })
+    };
+
+    fetch('https://docs.google.com/forms/u/0/d/e/1FAIpQLSfdrwRYKMlWpYbha8fdYrbM7NZ9NGQLeJh6jOmHnquCY9sxuQ/formResponse', requestOptions)
+    .then(response => response.json())
+    .then(data => console.log(data.id));
+        
+    return false;
+  }
+
+
+
+
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -43,10 +74,12 @@ function Newsletter() {
                 <p className="text-gray-300 text-lg mb-6">We're striving for a world with easy-on-the-eyes, humanly understandable documentation.</p>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto">
+                <form className="w-full lg:w-auto" onSubmit={postToGoogle}>
                   <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <input type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="#0">Subscribe</a>
+                    <fieldset>
+                      <input ref={emailRef} name="entry.1748406858" type="email" className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" />
+                    </fieldset>
+                    <input type="submit" style={{cursor:"pointer"}} className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" placeholder='Subscribe'></input>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
