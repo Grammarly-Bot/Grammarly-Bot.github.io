@@ -75,7 +75,7 @@ function Newsletter() {
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto" onSubmit={postToGoogle}>
-                  <div className="flex flex-col sm:flex-row justify-center max-w-xs mx-auto sm:max-w-md lg:mx-0">
+                  <div className="flex flex-col sm:flex-row justify-start max-w-xs mx-auto sm:max-w-md lg:mx-0">
                     <fieldset>
                       <input 
                         ref={emailRef} 
