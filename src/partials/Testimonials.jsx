@@ -4,7 +4,7 @@ import React from 'react';
 import grayhatImg from '../images/grayhat.png';
 import googleImg from '../images/google.png';
 import codeazaImg from '../images/codeaza.png';
-import TestimonialImage from '../images/testimonial.jpg';
+import TestimonialImage from '../images/testimonial.jpeg';
 
 function Testimonials() {
   return (
@@ -85,9 +85,9 @@ function Testimonials() {
                 <blockquote className="text-xl font-medium mb-4">
                   “ I love this product and would recommend it to anyone. Could be not easier to use, just one click and all our documentation is better. Our new devs love it. “
                 </blockquote>
-                <cite className="block font-bold text-lg not-italic mb-1">Darya Finger</cite>
+                <cite className="block font-bold text-lg not-italic mb-1">Muhammad Asim</cite>
                 <div className="text-gray-600">
-                  <span>CEO & Co-Founder</span> <a className="text-green-600 hover:underline" href="#0">@Dropbox</a>
+                  <span>CEO & Co-Founder</span> <a className="text-green-600 hover:underline" href="https://codeazatechnologies.com/">@Codeaza</a>
                 </div>
               </div>
 
