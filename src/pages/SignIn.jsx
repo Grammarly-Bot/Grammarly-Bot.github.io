@@ -52,7 +52,7 @@ function SignIn() {
                   </div>
                   <div className="flex flex-wrap -mx-3 mt-6">
                     <div className="w-full px-3">
-                      <button className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Sign in</button>
+                      <button className="btn text-white bg-green-600 hover:bg-green-700 w-full">Sign in</button>
                     </div>
                   </div>
                 </form>

@@ -41,9 +41,22 @@ function App() {
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
         <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path='/install' element={<Redirect redirectTo={"https://github.com/apps/grammarly-bot"} />} />
       </Routes>
     </>
   );
+}
+
+const Redirect = ({redirectTo}) => {
+  
+  useEffect(() => {
+    window.location.href = redirectTo; 
+    return null;
+  }, [])
+  
+  return (
+    <p>Redirecting you to installation...</p>
+  )
 }
 
 export default App;

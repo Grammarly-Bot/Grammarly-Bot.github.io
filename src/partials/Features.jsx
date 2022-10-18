@@ -33,7 +33,7 @@ function Features() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Why GrammarlyBot?</h1>
+            <h1 id={"why"} className="h2 mb-4">Why GrammarlyBot?</h1>
             {/* <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p> */}
           </div>
 
@@ -54,8 +54,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Easy-to-read documentation</div>
-                    <div className="text-gray-600">You and your team can easily read new documentation files, like READMEs, installation guides, etcetera, on every commit.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Easy-to-read documentation, automatically</div>
+                    <div className="text-gray-600">GrammarlyBot will save you the hassle of reviewing grammar in your READMEs, so you and your team can focus on building better software, on every commit.</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">

@@ -45,7 +45,7 @@ function SignUp() {
                   </div>
                   <div className="flex flex-wrap -mx-3 mt-6">
                     <div className="w-full px-3">
-                      <button className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Sign up</button>
+                      <button className="btn text-white bg-green-600 hover:bg-green-700 w-full">Sign up</button>
                     </div>
                   </div>
                   <div className="text-sm text-gray-500 text-center mt-3">
