@@ -1,5 +1,8 @@
 import React, { useRef } from 'react';
 
+import NewsletterForm from './NewsletterForm';
+import NewsletterSubscribe from './NewsletterSubscribe';
+
 function Newsletter() {
   const emailRef = useRef(null);
 
@@ -74,24 +77,7 @@ function Newsletter() {
                 <p className="text-gray-300 text-lg mb-6">We're striving for a world with easy-on-the-eyes, humanly understandable documentation.</p>
 
                 {/* CTA form */}
-                <form className="w-full lg:w-auto" onSubmit={postToGoogle}>
-                  <div className="flex flex-col sm:flex-row justify-start max-w-xs mx-auto sm:max-w-md lg:mx-0">
-                    <fieldset>
-                      <input 
-                        ref={emailRef} 
-                        name="entry.1748406858" 
-                        type="email" 
-                        id="Email"
-                        required
-                        className="form-input w-full appearance-none bg-gray-800 border border-gray-700 focus:border-gray-600 rounded-sm px-4 py-3 mb-2 sm:mb-0 sm:mr-2 text-white placeholder-gray-500" placeholder="Your email…" aria-label="Your email…" 
-                      />
-                    </fieldset>
-                    <input type="submit" style={{cursor:"pointer"}} className="btn text-white bg-green-600 hover:bg-green-700 shadow" placeholder='Subscribe'></input>
-                  </div>
-                  {/* Success message */}
-                  {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                  <p className="text-sm text-gray-400 mt-3">Free for open source repos ❤️</p>
-                </form>
+                <NewsletterSubscribe FormComponent={NewsletterForm}/>
               </div>
 
             </div>
