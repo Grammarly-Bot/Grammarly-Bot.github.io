@@ -31,17 +31,17 @@ function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">GrammarlyBot</h6>
             <ul className="text-sm">
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Log in</Link>
+              </li> */}
+              <li className="mb-2">
+                <Link to="https://github.com/marketplace/grammarly-bot/#pricing-and-setup" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</Link>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Pricing</Link>
+                <Link to="https://github.com/apps/grammarly-bot/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Install</Link>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Install</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Request more info</Link>
+                <a href="mailto:info@grayhat.com.pk?subject=[GrammarlyBot] I want to know more about this project" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Request more info</a>
               </li>
             </ul>
           </div>
@@ -51,22 +51,22 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Help</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Open an issue</Link>
+                <Link to="https://github.com/Grammarly-Bot/Grammarly-Bot.github.io/issues" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Open an issue</Link>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Contact support</Link>
+                <a href="mailto:support@grayhat.com.pk?subject=[GrammarlyBot] I need help" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Contact support</a>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Documentation</Link>
+                {/* <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Documentation</Link> */}
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Read the code</Link>
+                {/* <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Read the code</Link> */}
               </li>
             </ul>
           </div>
 
           {/* 4th block */}
-          <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
+          {/* <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Policies</h6>
             <ul className="text-sm">
               <li className="mb-2">
@@ -82,7 +82,7 @@ function Footer() {
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Vulnerability Management</Link>
               </li>
             </ul>
-          </div>
+          </div> */}
 
           {/* 5th block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-3">
