@@ -47,7 +47,10 @@ function HeroHome() {
                   </Link>
                 </div>
                 <div>
-                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" href="#why">Learn more</a>
+                  <a className="btn text-white bg-gray-900 hover:bg-gray-800 w-full sm:w-auto sm:ml-4" onClick={()=>{
+                      const section = document.querySelector( '#why' );
+                      section.scrollIntoView( { behavior: 'smooth', block: 'start' } );
+                  }}>Learn more</a>
                 </div>
               </div>
             </div>
