@@ -48,17 +48,23 @@ function Testimonials() {
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <img src={grayhatImg} alt={"Grayhat"} />
+              <img src={grayhatImg} alt={"Grayhat"} style={{
+                objectFit: "contain",
+              }} />
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <img src={googleImg} alt={"Google"} />
+              <img src={googleImg} alt={"Google"} style={{
+                objectFit: "contain",
+              }} />
             </div>
 
             {/* Item */}
             <div className="flex items-center justify-center py-2 col-span-2 md:col-auto">
-              <img src={codeazaImg} alt={"Codeaza"} />
+              <img src={codeazaImg} alt={"Codeaza"} style={{
+                objectFit: "contain",
+              }} />
             </div>
 
             {/* Item */}
