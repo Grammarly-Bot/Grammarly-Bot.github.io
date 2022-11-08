@@ -1,7 +1,7 @@
 {
   "name": "simple-light-react",
   "version": "0.1.0",
-  "homepage": "https://grammarlybot.net",
+  "homepage": "https://grammarly-bot.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
