@@ -24,11 +24,16 @@ function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
 
           {/* Site branding */}
-          <div className="flex-shrink-0 mr-4">
+          <div className="flex flex-shrink-0 flex-row mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
               <img height={52} width={52} src={logoImg}/>
             </Link>
+              <a href="https://www.producthunt.com/posts/grammarlybot?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-grammarlybot" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=366709&theme=light" alt="GrammarlyBot - Make&#0032;your&#0032;ReadMe&#0032;readable | Product Hunt" style={{
+                marginLeft: "14px",
+                width: '250px',
+                height: '54px',
+                }} width="250" height="54" /></a>
           </div>
 
           {/* Site navigation */}

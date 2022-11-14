@@ -10,7 +10,15 @@ export default defineConfig({
   css: {
     postcss,
   },
-  plugins: [react()],
+  plugins: [
+    react(),
+    ViteRadar({
+      // Google Analytics tag injection
+      analytics: {
+        id: 'G-H5XZLYBN5E',
+      },
+    })
+  ],
 //   base: '/GrammarlyBot/',
   resolve: {
     alias: [
